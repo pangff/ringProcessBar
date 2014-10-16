@@ -1,52 +1,83 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center"
-    android:orientation="vertical" >
+    android:layout_height="match_parent" >
 
-    <FrameLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center" >
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp" >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="50"
+                android:progressDrawable="@drawable/circular_progress_bar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/hello_world" />
+        </FrameLayout>
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/progressBar2"
             style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="@drawable/circle_shape"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circle_shape2"
             android:indeterminate="false"
             android:max="100"
-            android:progress="50"
-            android:progressDrawable="@drawable/circular_progress_bar" />
+            android:progress="75"
+            android:progressDrawable="@drawable/circular_progress_bar2" />
 
-        <TextView
+        <com.pangff.ringprocessbar.DropFlower
+            android:id="@+id/dropFlower"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp" >
+        </com.pangff.ringprocessbar.DropFlower>
+
+        <com.pangff.ringprocessbar.AttBtnView
+            android:id="@+id/attBtnView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="@string/hello_world" />
-    </FrameLayout>
+            android:layout_marginTop="10dp" />
 
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/circle_shape2"
-        android:indeterminate="false"
-        android:max="100"
-        android:progress="75"
-        android:progressDrawable="@drawable/circular_progress_bar2" />
+        <com.pangff.ringprocessbar.ListNameIconView
+            android:id="@+id/listNameIconView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
 
-    <com.pangff.ringprocessbar.DropFlower
-        android:id="@+id/dropFlower"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#234565" >
-    </com.pangff.ringprocessbar.DropFlower>
+        <com.pangff.ringprocessbar.ListNameIconView
+            android:id="@+id/listNameIconView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+        
+        <com.pangff.ringprocessbar.ListNameIconView
+            android:id="@+id/listNameIconView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+        
+        <com.pangff.ringprocessbar.ListNameIconView
+            android:id="@+id/listNameIconView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

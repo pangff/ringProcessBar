@@ -70,6 +70,7 @@ public class DropFlower extends View {
 		point.x = this.getMeasuredWidth() / 2;
 		point.y = (int) (this.getMeasuredHeight() / 2+(r-r*Math.sin(54*Math.PI/180))/2);
 		mPaint.setStyle(Style.FILL);
+		mPaint.setColor(colors[0]);
 		canvas.drawPath(getPath(point), mPaint);
 		canvas.save();
 		for (int i = 0; i < 4; i++) {

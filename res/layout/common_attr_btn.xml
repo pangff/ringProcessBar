@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="关注"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:drawablePadding="3dp"
+    android:textColor="@color/color_att_text_selector"
+    android:id="@+id/commontAttText"
+    android:gravity="center" />
+
+  
