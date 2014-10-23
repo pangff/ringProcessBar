@@ -29,6 +29,7 @@ public class LockActivity extends Activity {
 				if(isSetting){
 					if(codeLast==null){
 						codeLast = code;
+						Toast.makeText(LockActivity.this, "请重复绘制一遍", Toast.LENGTH_LONG).show();
 					}else{
 						if(codeLast.equals(code)){
 							Toast.makeText(LockActivity.this, "设置成功,进行解锁", Toast.LENGTH_LONG).show();
