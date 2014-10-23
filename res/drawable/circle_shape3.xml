@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="#F3706D" />
+
+            <size
+                android:height="@dimen/btn_listitem_height" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/btn_listitem_corner"
+                android:bottomRightRadius="@dimen/btn_listitem_corner"
+                android:topLeftRadius="@dimen/btn_listitem_corner"
+                android:topRightRadius="@dimen/btn_listitem_corner" />
+        </shape>
+    </item>
+   
+
+</layer-list>
